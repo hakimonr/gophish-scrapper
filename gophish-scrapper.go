@@ -13,7 +13,7 @@ func main() {
 	apiKey := "******" ///Enter your Gophish Server's API key!!!
 	campaignID := "***" ///ChangeCampaignID!!!
 
-	url := fmt.Sprintf("https://178.62.214.241:3333/api/campaigns/%s/results?api_key=%s", campaignID, apiKey)
+	url := fmt.Sprintf("https://YOUR-GOPHISP-SERVER-IP:3333/api/campaigns/%s/results?api_key=%s", campaignID, apiKey)
 
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
