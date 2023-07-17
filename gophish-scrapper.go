@@ -35,7 +35,6 @@ func main() {
 	var results []map[string]interface{}
 	err = json.Unmarshal(body, &results)
 	if err != nil {
-		// Try unmarshaling as a single object instead
 		var result map[string]interface{}
 		err = json.Unmarshal(body, &result)
 		if err != nil {
